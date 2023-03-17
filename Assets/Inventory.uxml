@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Inventory.uss?fileID=7433441132597879392&amp;guid=f06da948ac1ea41f2946adb43251cce9&amp;type=3#Inventory" />
+    <ui:VisualElement name="Container" class="container" style="flex-direction: row;">
+        <ui:VisualElement name="Inventory" class="inventory" style="height: 70%; border-top-color: rgb(27, 0, 255);">
+            <ui:Label text="Graphics" display-tooltip-when-elided="true" name="Header" class="header2 header" />
+            <ui:VisualElement name="SlotContainer" class="slotsContainer" style="align-items: flex-start; justify-content: flex-start; flex-direction: column; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; flex-shrink: 1;">
+                <ui:Label text="General" display-tooltip-when-elided="true" style="left: 0; top: 0; color: rgb(255, 255, 255); font-size: 35px; -unity-font-style: bold;" />
+                <ui:GroupBox style="flex-direction: row;" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" style="height: 39px;" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="GhostIcon" style="visibility: hidden; position: absolute; width: 128px; height: 128px; background-image: none;" />
+        <ui:VisualElement name="Inventory" class="inventory" style="border-top-color: rgb(94, 0, 255);">
+            <ui:Label text="Settings" display-tooltip-when-elided="true" name="Header" class="header header2" />
+            <ui:VisualElement name="SlotContainer" class="slotsContainer" style="align-items: flex-start; justify-content: flex-start; flex-direction: column; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; flex-shrink: 1; flex-grow: 1; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+                <ui:Label text="Audio" display-tooltip-when-elided="true" style="left: 0; top: 0; color: rgb(255, 255, 255); font-size: 35px; -unity-font-style: bold;" />
+                <ui:Slider picking-mode="Ignore" label="VFX" value="50" high-value="100" show-input-field="false" style="color: rgb(255, 255, 255); -unity-text-outline-color: rgb(94, 0, 255);" />
+                <ui:Slider picking-mode="Ignore" label="MUSIC" value="50" high-value="100" show-input-field="false" style="color: rgb(255, 255, 255); -unity-text-outline-color: rgb(94, 0, 255);" />
+                <ui:Slider picking-mode="Ignore" label="MASTER" value="50" high-value="100" show-input-field="false" style="color: rgb(255, 255, 255); -unity-text-outline-color: rgb(94, 0, 255); margin-bottom: 30px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Inventory" class="inventory" style="height: 70%; border-top-color: rgb(167, 0, 255); margin-left: 20px; margin-right: 20px;">
+            <ui:Label text="Gameplay" display-tooltip-when-elided="true" name="Header" class="header" style="color: rgb(255, 255, 255);" />
+            <ui:VisualElement name="SlotContainer" class="slotsContainer" style="align-items: flex-start; justify-content: center; flex-direction: column; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; flex-shrink: 1;">
+                <ui:Button text="Button" display-tooltip-when-elided="true" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" />
+                <ui:Toggle label="Use Cheat Codes" style="color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
